@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import SkiDayCounter from "./SkiDayCounter";
+import Library from "./components/Library";
 
 let skiData = {
   total: 50,
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Library />
         <SkiDayCounter
           total={skiData.total}
           powder={skiData.powder}
