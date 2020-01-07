@@ -11,6 +11,7 @@ const calcGoalProgress = (total, goal) => {
 const SkiDayCounter = ({ total, powder, backcountry, goal }) => {
   return (
     <div>
+      <h2>SkiDay Counter</h2>
       <section>
         <div>
           <p>Total Days: {total}</p>
