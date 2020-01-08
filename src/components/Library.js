@@ -5,7 +5,8 @@ class Library extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
+      open: true,
+      freeBookmark: true
     };
     // this.toggleOpenClosed = this.toggleOpenClosed.bind(this);
   }
@@ -27,6 +28,7 @@ class Library extends Component {
             title={book.title}
             author={book.author}
             pages={book.pages}
+            freeBookmark={this.state.freeBookmark}
           />
         ))}
       </div>
